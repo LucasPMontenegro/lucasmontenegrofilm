@@ -20,23 +20,19 @@ export default function ContactSection() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  console.log("ContactSection: In view status:", inView);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    console.log(`ContactSection: Form field ${name} updated:`, value);
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("ContactSection: Form submitted with data:", formData);
     setIsSubmitting(true);
     
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
     
-    console.log("ContactSection: Form submission completed");
     setIsSubmitting(false);
     setFormData({ name: '', email: '', message: '' });
   };

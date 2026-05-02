@@ -15,7 +15,6 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    console.log("Navigation: Component mounted");
     
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -33,7 +32,6 @@ export default function Navigation() {
       });
 
       if (currentSection) {
-        console.log("Navigation: Active section changed to:", currentSection);
         setActiveSection(currentSection);
       }
     };
@@ -43,7 +41,6 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (href: string) => {
-    console.log("Navigation: Scrolling to section:", href);
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

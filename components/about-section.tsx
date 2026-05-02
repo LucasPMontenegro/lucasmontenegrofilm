@@ -37,7 +37,6 @@ export default function AboutSection() {
     triggerOnce: true,
   });
 
-  console.log("AboutSection: In view status:", inView);
 
   return (
     <section id="about" ref={ref} className="py-20 px-6">

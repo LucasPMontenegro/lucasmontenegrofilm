@@ -10,7 +10,6 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    console.log("ThemeToggle: Component mounted, current theme:", theme);
     setMounted(true);
   }, [theme]);
 
@@ -18,7 +17,6 @@ export default function ThemeToggle() {
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    console.log("ThemeToggle: Switching theme to:", newTheme);
     setTheme(newTheme);
   };
 

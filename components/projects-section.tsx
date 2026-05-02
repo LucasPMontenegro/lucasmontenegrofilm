@@ -57,7 +57,6 @@ export default function ProjectsSection() {
     triggerOnce: true,
   });
 
-  console.log("ProjectsSection: In view status:", inView);
 
   return (
     <section id="projects" ref={ref} className="py-20 px-6 bg-gray-50/50 dark:bg-gray-900/50">

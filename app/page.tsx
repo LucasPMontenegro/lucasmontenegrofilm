@@ -5,6 +5,7 @@ import CustomCursor from '@/components/custom-cursor';
 import ThemeToggle from '@/components/theme-toggle';
 import Navigation from '@/components/navigation';
 import HeroSection from '@/components/hero-section';
+import CinetempShowcase from '@/components/cinetemp-showcase';
 import AboutSection from '@/components/about-section';
 import MissionSection from '@/components/mission-section';
 import GalleryShowcase from '@/components/gallery-showcase';
@@ -13,7 +14,6 @@ import ContactSection from '@/components/contact-section';
 
 export default function Home() {
   useEffect(() => {
-    console.log("Portfolio: Main page loaded with dark photography theme");
     
     // Smooth scroll behavior for all anchor links
     const handleAnchorClick = (e: Event) => {
@@ -38,6 +38,7 @@ export default function Home() {
       <Navigation />
       
       <HeroSection />
+      <CinetempShowcase />
       <AboutSection />
       <MissionSection />
       <GalleryShowcase />

@@ -7,19 +7,16 @@ export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    console.log("CustomCursor: Component mounted");
     
     const updatePosition = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleMouseEnter = () => {
-      console.log("CustomCursor: Mouse entered hoverable element");
       setIsHovering(true);
     };
 
     const handleMouseLeave = () => {
-      console.log("CustomCursor: Mouse left hoverable element");
       setIsHovering(false);
     };
 
