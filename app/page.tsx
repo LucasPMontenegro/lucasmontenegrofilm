@@ -14,7 +14,6 @@ import ContactSection from '@/components/contact-section';
 
 export default function Home() {
   useEffect(() => {
-    console.log("Portfolio: Main page loaded with dark photography theme");
     
     // Smooth scroll behavior for all anchor links
     const handleAnchorClick = (e: Event) => {

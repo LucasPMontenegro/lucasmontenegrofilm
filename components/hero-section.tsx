@@ -5,7 +5,6 @@ import { ArrowDown, Camera, Film, Play } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToNext = () => {
-    console.log("HeroSection: Scrolling to about section");
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
